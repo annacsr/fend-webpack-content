@@ -10,8 +10,8 @@ app.use(express.static('dist'))
 console.log(__dirname)
 
 app.get('/', function (req, res) {
-    res.sendFile('/client/views/index.html', { root: __dirname + '/..' })
-    //res.sendFile('dist/index.html')
+    //res.sendFile('/client/views/index.html', { root: __dirname + '/..' })
+    res.sendFile('dist/index.html')
 })
 
 // designates what port the app will listen to for incoming requests
